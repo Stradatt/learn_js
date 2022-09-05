@@ -1,12 +1,28 @@
-console.log(2 + 2 * 2 !== `8`);
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+const personalMovieD = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+const a = prompt("Какой из последних фильмов вы смотрели?", ""),
+      b = prompt("На сколько его оцените?", ""),
+      c = prompt("Какой из последних фильмов вы смотрели?", ""),
+      d = prompt("На сколько его оцените?", "");
+
+personalMovieD.movies[a] = b;
+personalMovieD.movies[c] = d;
+
+console.log(personalMovieD);
 
 
 
-const isChecked = false,
-      isClose = false;
 
-console.log(isChecked || !isClose)
-/* Интерпритацияпше
+
+
+
+/* Интерполяция
 const category = 'toys';
 console.log(`https://someurl.com/${category}/5`);
 
